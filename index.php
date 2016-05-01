@@ -4,6 +4,7 @@
 	<title>Chatroulette</title>
 
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/jquery-cookie.js"></script>
