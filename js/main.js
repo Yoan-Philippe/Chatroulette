@@ -90,12 +90,18 @@ function setDelete(){
 
 function saveName() {
     Cookies.remove('name');
-    var person = prompt("Please enter your name");
-    if (person == null || person=='') {
-        person = 'Anonymous';
-    }
-    Cookies.set('name', person);
-    $('.text').focus();
+
+    setTimeout(function(){
+        var person = prompt("Please enter your name");
+        if (person == null || person=='') {
+            person = 'Anonymous';
+        }
+        Cookies.set('name', person);
+        $('.text').focus();
+      },800);
+
+
+    
 }
 
 function scrollToBottom(){
