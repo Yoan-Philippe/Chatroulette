@@ -17,6 +17,7 @@ $(document).ready(function(){
     scrollToBottom();
     saveName();
 	setDelete();
+    countMessage = getCount(false);
     setInterval(updateChat, 1000);
 
 
@@ -162,6 +163,8 @@ function updateChat(){
         countMessage = getCount(false);
         currentMessageCount  = countMessage;
         document.title = defaultTitle;
+        newMessage = 0;
+        currentNewMessage = 0;
     }
     else{
         currentMessageCount = countMessage;
