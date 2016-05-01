@@ -1,0 +1,69 @@
+div.container{
+	width:500px; 
+	margin-left:auto; 
+	margin-right:auto; 
+	font-family: 'Helvetica';
+	margin-top:100px; 
+}
+
+h1{
+	display: inline-block;
+}
+
+img{
+	border-radius: 10px;
+}
+
+.today{
+	text-align: center;
+	color: #34495e;
+}
+
+ul{
+	list-style: none;
+}
+
+ul li{
+	margin-bottom: 10px;
+}
+
+ul span.delete{
+	display: none;
+	color: #c0392b;
+	font-weight: bold;
+	padding: 8px;
+}
+
+ul span.date{
+	color: #7f8c8d;
+}
+
+
+ul span.delete:hover{
+	cursor: pointer;
+}
+
+div.chat-box{
+	border: 1px solid #1a1a1a;
+	height: 400px;
+	border-radius: 5px;
+	overflow-y: scroll;
+	clear: both;
+}
+
+input.text{
+	margin-top: 10px;
+	height: 30px;
+	padding-left: 10px;
+    width: 420px;
+}
+
+button.submit-message{
+	height: 36px;
+	width: 60px;
+}
+
+button.reset{
+	float: right;
+	margin-top: 30px;
+}
