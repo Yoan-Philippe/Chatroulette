@@ -195,7 +195,7 @@ function getCount(away){
                     toggleTitle = false;
                 }
                 else{
-                    var newTitle = name + ' vous a envoyé un message';
+                    var newTitle = name + ' vous a envoy\xE9 un message';
                     toggleTitle = true;
                 }
                 document.title = newTitle;
