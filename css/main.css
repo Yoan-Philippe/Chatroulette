@@ -1,9 +1,17 @@
+html{
+	background: url('../bg.jpg') no-repeat;
+}
+
 div.container{
 	width:500px; 
 	margin-left:auto; 
 	margin-right:auto; 
 	font-family: 'Helvetica';
 	margin-top:100px; 
+	background: rgba(256, 256, 256, 0.9);
+	opacity: 0.8;
+	padding: 20px;
+	border-radius: 5px;
 }
 
 h1{

@@ -33,7 +33,7 @@ $dateFormated = $dateTime->format('d F');
 
 <div class="container">
 	<h1>Chatroulette</h1>
-	<button class="reset">Reset</button>
+	<button class="reset">Clear</button>
 	<div class="chat-box">
 		<p class="today"><?= $dateFormated; ?></p>
 		<?php 
