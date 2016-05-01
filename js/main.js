@@ -19,6 +19,7 @@ $(document).ready(function(){
 	setDelete();
     countMessage = getCount(false);
     setInterval(updateChat, 1000);
+    $('.text').focus();
 
 
     // Add message on Send button
@@ -55,6 +56,7 @@ $(document).ready(function(){
     		    dataType: 'html',
     		    success: function(data) {
     		        $('.list-message').remove();
+                    document.title = defaultTitle;
     		    }
     		});
 	    }
@@ -89,15 +91,17 @@ function setDelete(){
 
 
 function saveName() {
-    Cookies.remove('name');
+    //Cookies.remove('name');
 
     setTimeout(function(){
-        var person = prompt("Please enter your name");
-        if (person == null || person=='') {
-            person = 'Anonymous';
+        if(Cookies.get('name')==null){
+            var person = prompt("Please enter your name");
+            if (person == null || person=='') {
+                person = 'Anonymous';
+            }
+            Cookies.set('name', person);
+            $('.text').focus();
         }
-        Cookies.set('name', person);
-        $('.text').focus();
       },800);
 
 
